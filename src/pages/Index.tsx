@@ -2,31 +2,23 @@ import LinkButton from "@/components/LinkButton";
 import {
   SpotifyIcon,
   AppleMusicIcon,
-  SoundCloudIcon,
   YouTubeIcon,
   YouTubeMusicIcon,
   TikTokIcon,
   InstagramIcon,
-  XIcon,
-  FacebookIcon,
 } from "@/components/icons/MusicIcons";
 
 const Index = () => {
   const musicLinks = [
-    { href: "#", icon: <SpotifyIcon />, label: "Spotify" },
-    { href: "#", icon: <AppleMusicIcon />, label: "Apple Music" },
-    { href: "#", icon: <SoundCloudIcon />, label: "SoundCloud" },
-    { href: "#", icon: <YouTubeIcon />, label: "YouTube" },
-    { href: "#", icon: <YouTubeMusicIcon />, label: "YouTube Music" },
-    { href: "#", icon: <TikTokIcon />, label: "TikTok" },
-    { href: "#", icon: <InstagramIcon />, label: "Instagram" },
+    { href: "https://open.spotify.com/artist/3G1VYRdglHiZ9pKPfzglct?si=sqj2GDvFTW6uJAxMmvrdEQ", icon: <SpotifyIcon />, label: "Spotify" },
+    { href: "https://music.apple.com/us/artist/gasper-black/1808608625", icon: <AppleMusicIcon />, label: "Apple Music" },
+    { href: "https://youtube.com/@gasperblack33?si=BhqioMDN38x8wH1s", icon: <YouTubeIcon />, label: "YouTube" },
+    { href: "https://music.youtube.com/channel/UCcMWzeNaTI_9-yVDuDJdGaw?si=VWyMW28u-M3Hr1S5", icon: <YouTubeMusicIcon />, label: "YouTube Music" },
   ];
 
   const socialLinks = [
-    { href: "#", icon: <InstagramIcon />, label: "Instagram" },
-    { href: "#", icon: <XIcon />, label: "X" },
-    { href: "#", icon: <TikTokIcon />, label: "TikTok" },
-    { href: "#", icon: <FacebookIcon />, label: "Facebook" },
+    { href: "https://www.instagram.com/gasperblack33?igsh=MTE1anJzYnIxNG5ieQ==", icon: <InstagramIcon />, label: "Instagram" },
+    { href: "https://www.tiktok.com/@gasperblack33?_r=1&_t=ZT-92tTy9QTNJf", icon: <TikTokIcon />, label: "TikTok" },
   ];
 
   return (
