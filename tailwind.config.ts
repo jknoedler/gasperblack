@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        gothic: ['UnifrakturMaguntia', 'cursive'],
+        gothic: ['Constantine', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
