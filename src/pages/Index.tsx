@@ -9,6 +9,7 @@ import {
   TikTokIcon,
   InstagramIcon,
   ThreadsIcon,
+  ShoppingBagIcon,
 } from "@/components/icons/MusicIcons";
 
 const Index = () => {
@@ -24,6 +25,10 @@ const Index = () => {
     { href: "https://www.instagram.com/gasperblack33?igsh=MTE1anJzYnIxNG5ieQ==", icon: <InstagramIcon />, label: "Instagram" },
     { href: "https://www.threads.net/@gasperblack33", icon: <ThreadsIcon />, label: "Threads" },
     { href: "https://www.tiktok.com/@gasperblack33?_r=1&_t=ZT-92tTy9QTNJf", icon: <TikTokIcon />, label: "TikTok" },
+  ];
+
+  const merchLinks = [
+    { href: "https://black33.net/", icon: <ShoppingBagIcon />, label: "Merch" },
   ];
 
   return (
@@ -58,13 +63,25 @@ const Index = () => {
         </div>
 
         {/* Socials Section */}
-        <div className="w-full mb-16">
+        <div className="w-full mb-10">
           <h2 className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4 text-center">
             Socials
           </h2>
           <div className="flex flex-col gap-3">
             {socialLinks.map((link) => (
               <LinkButton key={`social-${link.label}`} {...link} />
+            ))}
+          </div>
+        </div>
+
+        {/* Merch Section */}
+        <div className="w-full mb-16">
+          <h2 className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4 text-center">
+            Merch
+          </h2>
+          <div className="flex flex-col gap-3">
+            {merchLinks.map((link) => (
+              <LinkButton key={`merch-${link.label}`} {...link} />
             ))}
           </div>
         </div>
