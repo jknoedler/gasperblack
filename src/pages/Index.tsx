@@ -1,4 +1,5 @@
 import LinkButton from "@/components/LinkButton";
+import heptagram from "@/assets/heptagram.png";
 import {
   SpotifyIcon,
   AppleMusicIcon,
@@ -26,7 +27,18 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12">
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 relative overflow-hidden">
+      {/* Background Heptagram */}
+      <div 
+        className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-10"
+        aria-hidden="true"
+      >
+        <img 
+          src={heptagram} 
+          alt="" 
+          className="w-[80vmin] h-[80vmin] object-contain"
+        />
+      </div>
       <div className="w-full max-w-md flex flex-col items-center">
         {/* Artist Name */}
         <h1 className="font-gothic text-5xl md:text-6xl text-foreground mb-12 text-center tracking-wide">
